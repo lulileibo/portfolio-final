@@ -1,0 +1,21 @@
+CÓMO ACTUALIZAR TU PORTFOLIO EN NETLIFY
+=======================================
+
+Dentro de esta carpeta hay solo lo que cambia o se agrega:
+
+  index.html   -> reemplaza tu index.html actual (todo queda igual; solo cambian
+                  los clics de las carpetas y el contenido que aparece al abrirlas)
+  casos.css    -> archivo NUEVO con los estilos de los proyectos ampliados
+                  (tu style.css NO se toca)
+  casos/       -> carpeta NUEVA con las imágenes de los casos
+
+Pasos:
+1. Abrí la carpeta de tu proyecto (la que tiene style.css, logo.png, proyectos/, etc.).
+2. Copiá ahí index.html (reemplazando el anterior), casos.css y la carpeta casos/.
+3. Arrastrá la carpeta completa del proyecto a Netlify (Deploys) como hacés siempre.
+
+Las láminas completas se siguen leyendo desde tu carpeta proyectos/ (1.png a 16.png),
+así que se ven con tu calidad original.
+
+Para cambiar textos de un proyecto: en index.html buscá "PLANTILLAS DE CADA CARPETA".
+Cada carpeta es un bloque <template> con sus textos e imágenes.

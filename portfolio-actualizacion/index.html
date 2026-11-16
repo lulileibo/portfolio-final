@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucía Leibovich</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="casos.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+   <header class="header-principal">
+    <!-- Izquierda: HOME (Vuelve arriba de todo) -->
+    <!-- Izquierda: LOGO + Nombre (Vuelve arriba de todo) -->
+<a href="#" class="btn-home-logo">
+    <img src="logo.png" alt="Lucía Leibovich Logo" class="logo-header">
+</a>
+
+    <!-- Derecha: Navegación por secciones + Contacto -->
+    <nav class="nav-derecha">
+        <a href="#sobre-mi" class="nav-link">Sobre mí</a>
+        <a href="#proyectos" class="nav-link">Proyectos</a>
+        <a href="#estudios" class="nav-link">Mis estudios</a>
+        <a href="#herramientas" class="nav-link">Herramientas</a>
+        <a href="#logros" class="nav-link">Logros</a>
+        <a href="#contacto" class="nav-link btn-trabajemos">Trabajemos juntos ↗</a>
+    </nav>
+</header>
+   <section id="hero" class="hero">
+    <div class="contenido">
+        <img src="portfolio.png" alt="Portfolio - Lucía Leibovich" class="imagen-hero">
+    </div>
+</section>
+<!-- BANNER EN MOVIMIENTO -->
+    <div class="marquee-container">
+        <div class="marquee-content">
+            <span>DISEÑO UX/UI</span>
+            <span class="dot">•</span>
+            <span>DISEÑO DE PRODUCTO</span>
+            <span class="dot">•</span>
+            <span>PENSAMIENTO SISTÉMICO</span>
+            <span class="dot">•</span>
+            <span>INVESTIGACIÓN CON USUARIOS</span>
+            <span class="dot">•</span>
+            <span>SOLUCIONES VISUALES</span>
+            <span class="dot">•</span>
+            <!-- Repetimos el contenido para dar la sensación de bucle infinito sin saltos -->
+            <span>DISEÑO UX/UI</span>
+            <span class="dot">•</span>
+            <span>DISEÑO DE PRODUCTO</span>
+            <span class="dot">•</span>
+            <span>PENSAMIENTO SISTÉMICO</span>
+            <span class="dot">•</span>
+            <span>INVESTIGACIÓN CON USUARIOS</span>
+            <span class="dot">•</span>
+            <span>SOLUCIONES VISUALES</span>
+            <span class="dot">•</span>
+        </div>
+    </div>
+    <section id="sobre-mi" class="seccion">
+        <div class="fila">
+            <div class="texto">
+  <!-- Título existente -->
+  <h2>Sobre mí</h2>
+
+  <!-- Frase principal (con el tamaño actual) -->
+  <p class="frase-destacada">
+    Diseño para convertir ideas en experiencias, productos y soluciones pensadas para las personas.
+  </p>
+
+  <!-- Párrafos complementarios (15-20% más pequeños) -->
+  <div class="texto-complementario">
+    <p>Soy diseñadora y me interesa explorar cómo una idea puede transformarse en algo concreto, funcional y con sentido. Disfruto trabajar en proyectos que me permitan investigar, pensar, crear y encontrar soluciones a necesidades reales.</p>
+
+    <p>Mi formación en Diseño de Producto, UX/UI y Negocios del Diseño y la Comunicación me dio una mirada integral sobre el proceso de diseño, desde la generación de ideas hasta su desarrollo y comunicación.</p>
+
+    <p>Tengo experiencia desarrollando productos y propuestas personalizadas, trabajando a partir de las necesidades de cada cliente y mejorando las soluciones a través del feedback. También me interesa el diseño de experiencias digitales y la forma en que las personas interactúan con productos y servicios.</p>
+
+    <p>Soy una persona curiosa, creativa y observadora. Me inspira lo cotidiano, las personas, los objetos, la tecnología y todo aquello que puede convertirse en una nueva idea.</p>
+  </div>
+</div>
+
+            <div class="imagen-contenedor">
+                <img src="sobremi.jpg" alt="Lucia Leibovich - Diseñadora UX/UI">
+            </div>
+        </div>
+    </section>
+
+<!-- SECCIÓN MIS PROYECTOS -->
+<section id="proyectos" class="seccion">
+
+    <!-- 1. VISTA GENERAL (GRILLA DE CARPETAS) -->
+    <div id="vista-grilla-proyectos">
+        <div class="texto">
+            <h2>Mis proyectos</h2>
+            <p>Explorá las distintas áreas de trabajo haciendo clic en cada carpeta.</p>
+        </div>
+
+        <div class="grid-carpetas-diseno">
+
+            <!-- Carpeta 1: UX/UI -->
+            <div class="folder-card" onclick="abrirCarpeta('uxui')">
+                <div class="folder-tab"><span class="folder-tag">01 / UX/UI</span></div>
+                <div class="folder-body">
+                    <div class="folder-preview"><img src="imagenes/portada-uxui.png" alt="Portada UX/UI"></div>
+                    <h3>Diseño UX/UI</h3>
+                    <p>Arquitectura de información & Interfaces</p>
+                    <span class="folder-link">Ver caso de estudio →</span>
+                </div>
+            </div>
+
+            <!-- Carpeta 2: Producto -->
+            <div class="folder-card" onclick="abrirCarpeta('producto')">
+                <div class="folder-tab"><span class="folder-tag">02 / PRODUCTO</span></div>
+                <div class="folder-body">
+                    <div class="folder-preview"><img src="imagenes/portada-producto.png" alt="Portada Producto"></div>
+                    <h3>Diseño de Producto</h3>
+                    <p>Modelado, materialidad & innovación</p>
+                    <span class="folder-link">Ver caso de estudio →</span>
+                </div>
+            </div>
+
+            <!-- Carpeta 3: Gráfico -->
+            <div class="folder-card" onclick="abrirCarpeta('grafico')">
+                <div class="folder-tab"><span class="folder-tag">03 / GRÁFICO</span></div>
+                <div class="folder-body">
+                    <div class="folder-preview"><img src="imagenes/portada-grafico.png" alt="Portada Gráfico"></div>
+                    <h3>Diseño Gráfico</h3>
+                    <p>Identidad visual & Branding</p>
+                    <span class="folder-link">Ver caso de estudio →</span>
+                </div>
+            </div>
+
+            <!-- Carpeta 4: Personalizados -->
+            <div class="folder-card" onclick="abrirCarpeta('eventos')">
+                <div class="folder-tab"><span class="folder-tag">04 / EVENTOS</span></div>
+                <div class="folder-body">
+                    <div class="folder-preview"><img src="imagenes/portada-eventos.png" alt="Portada Eventos"></div>
+                    <h3>Eventos & Personalizados</h3>
+                    <p>Packaging & Objetos a medida</p>
+                    <span class="folder-link">Ver caso de estudio →</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 2. VISTA DE DETALLE: se llena con el contenido de cada carpeta (ver plantillas más abajo) -->
+    <div id="vista-detalle-proyecto" class="detalle-proyecto-full" style="display: none;">
+        <div class="caso-wrap">
+            <div class="caso-barra">
+                <button class="caso-volver" id="caso-volver" onclick="volverAtras()">← Volver a las carpetas</button>
+                <span class="folder-tag" id="caso-tag"></span>
+            </div>
+            <div id="detalle-contenido"></div>
+        </div>
+
+        <div class="detalle-info-centrada">
+            <button class="btn-ver-mas-trabajos" onclick="ocultarDetalleProyecto()">Ver más trabajos ↗</button>
+        </div>
+    </div>
+
+    <!-- ======================================================
+         PLANTILLAS DE CADA CARPETA
+         Para editar textos o imágenes, cambiá el contenido acá.
+         ====================================================== -->
+
+    <!-- ===================== 01 / UX/UI ===================== -->
+    <template id="carpeta-uxui" data-tag="01 / UX/UI">
+        <article class="caso">
+            <header class="caso-head">
+                <span class="caso-kicker">Diseño UX/UI · App mobile</span>
+                <h2 class="caso-titulo">Planazo</h2>
+                <p class="caso-bajada">Una app para que organizar planes entre amigos sea simple, ordenado y sin estrés: crear un plan en segundos, cruzar la disponibilidad del grupo, votar y confirmar, todo en un mismo lugar.</p>
+                <div class="caso-meta">
+                    <div><b>Proyecto</b>Proyecto final · Diseño UX/UI</div>
+                    <div><b>Rol</b>Research, arquitectura, UI y testeo</div>
+                    <div><b>Año</b>2025</div>
+                    <div><b>Herramientas</b>Figma, UXtweak</div>
+                </div>
+            </header>
+
+            <div class="caso-hero pz-hero">
+                <div class="pz-txt"><div class="pz-marca">Planazo</div><p>Con amigos todo debería ser más simple. Organizar, también.</p></div>
+                <div class="pz-fotos"><img src="casos/planazo/pz-hand.jpg" alt="Mano sosteniendo la app Planazo"><img src="casos/planazo/pz-phone.jpg" alt="Pantalla de inicio de Planazo"></div>
+            </div>
+
+            <div class="caso-texto">
+                <p>En los chats de grupo los planes se pierden entre decenas de mensajes, los horarios no coinciden y siempre alguien termina organizando todo. Muchos encuentros quedan “en veremos”.</p>
+                <p><strong>Planazo</strong> centraliza la elección de horarios y actividades, propone planes según las coincidencias del grupo y suma dinámicas para destrabar la indecisión, como la ruleta o el plan sorpresa.</p>
+            </div>
+
+            <div class="caso-cards" style="--acento:#2ECC87">
+                <div><h4>Problema</h4><p>Organizar planes con amigos suele ser caótico: decenas de mensajes, horarios que no coinciden y falta de acuerdo sobre qué hacer.</p></div>
+                <div><h4>Objetivo</h4><p>Facilitar la organización de planes grupales, eliminar discusiones y sumar un factor de diversión que motive a usarla.</p></div>
+                <div><h4>Solución</h4><p>Centralizar horarios y actividades, proponer planes inteligentes y ofrecer dinámicas como plan sorpresa, ruleta o desafíos.</p></div>
+                <div><h4>Usuarios</h4><p>Jóvenes de 18 a 35 años que hacen planes con amigos y quieren coordinar y decidir sin fricción.</p></div>
+            </div>
+
+            <section class="caso-bloque">
+                <div class="caso-bloque-head"><div><span class="caso-label">01 — Research</span><h3 class="caso-h3">Por qué los planes no se concretan</h3></div><p>Investigué en comunidades y redes, hice entrevistas, analicé competidores y revisé artículos sobre coordinación social y “decision fatigue”. Ninguna app combinaba disponibilidad, categorías y votación en un flujo guiado.</p></div>
+                <figure class="caso-fig"><img src="casos/planazo/pz-benchmark.jpg" alt="Benchmarking de WhatsApp, Meetup y Eventbrite" data-zoom><figcaption><b>Benchmarking</b>WhatsApp, Meetup y Eventbrite: pasos de navegación, tono y jerarquía</figcaption></figure>
+            </section>
+
+            <section class="caso-bloque">
+                <div class="caso-bloque-head"><div><span class="caso-label">02 — Entrevistas</span><h3 class="caso-h3">Lo que dijeron las personas</h3></div><p>El mayor problema es coordinar horarios. WhatsApp es el canal de todos, pero no sirve para decidir rápido en grupo. Las dinámicas lúdicas aparecieron como una forma concreta de salir de la indecisión.</p></div>
+                <div class="caso-stats">
+                    <div class="destacado"><b>100<small>%</small></b><p>usa WhatsApp como canal principal</p></div>
+                    <div><b>90<small>%</small></b><p>probaría Planazo con su grupo de amigos</p></div>
+                    <div><b>80<small>%</small></b><p>quiere que la app sugiera planes concretos</p></div>
+                    <div><b>75<small>%</small></b><p>dice que el mayor problema es coordinar horarios</p></div>
+                    <div><b>60<small>%</small></b><p>siempre repite los mismos planes</p></div>
+                    <div><b>60<small>%</small></b><p>afirma que los planes suelen cancelarse</p></div>
+                    <div><b>55<small>%</small></b><p>pide funciones rápidas de decisión (ruleta o ranking)</p></div>
+                    <div><p style="margin-top:0"><strong>Para adoptarla piden:</strong> simplicidad, variedad de propuestas, herramientas de decisión y diversión.</p></div>
+                </div>
+            </section>
+
+            <section class="caso-bloque">
+                <div class="caso-bloque-head"><div><span class="caso-label">03 — Definición</span><h3 class="caso-h3">Sofía, 25 años, siempre termina organizando</h3></div><p>La user persona y el mapa de empatía sintetizan las entrevistas: Sofía necesita una forma simple y divertida de organizar planes, porque coordinar en grupo consume tiempo y suele terminar en planes repetidos o cancelados.</p></div>
+                <div class="caso-persona">
+                    <div class="quien"><b>Sofía Rodríguez</b><span>25 años · Diseñadora gráfica junior · Recoleta</span><blockquote>“Nunca coincidimos con horarios. Nadie se decide y perdemos tiempo.”</blockquote></div>
+                    <div class="cols">
+                        <div><h4>Objetivos</h4><ul><li>Ahorrar tiempo organizando planes.</li><li>Tener propuestas variadas sin pensar demasiado.</li><li>Evitar discusiones interminables en el grupo.</li><li>Divertirse con la organización, no frustrarse.</li></ul></div>
+                        <div><h4>Frustraciones</h4><ul><li>Conversaciones eternas sin decisión final.</li><li>No encontrar horarios en común.</li><li>Ser siempre quien organiza.</li><li>Terminar siempre en el mismo lugar.</li></ul></div>
+                    </div>
+                </div>
+                <div class="caso-empatia">
+                    <div><h4>Qué piensa y siente</h4>Quiere más tiempo de calidad con sus amigos y siente que organizar por WhatsApp es una pérdida de tiempo.</div>
+                    <div><h4>Qué la motiva</h4>Experiencias nuevas, que la app le ahorre discusiones y ver de un vistazo qué plan funciona para todos.</div>
+                </div>
+                <div class="caso-g g2" style="margin-top:22px">
+                    <figure class="caso-fig"><img src="casos/planazo/pz-storyboard.jpg" alt="Storyboard" data-zoom><figcaption><b>Storyboard</b>Del chat caótico al “¡Plan confirmado!”</figcaption></figure>
+                    <figure class="caso-fig"><img src="casos/planazo/pz-cardsort.jpg" alt="Card sorting" data-zoom><figcaption><b>Card sorting abierto</b>Matriz de similitud y dendrograma</figcaption></figure>
+                </div>
+            </section>
+
+            <section class="caso-bloque">
+                <div class="caso-bloque-head"><div><span class="caso-label">04 — Estructura</span><h3 class="caso-h3">Arquitectura y flujos</h3></div><p>El MVP se enfoca en registro, categorías, disponibilidad horaria del grupo, resultados de planes y confirmación. Gamificación, chat interno y mapas quedan para una segunda etapa.</p></div>
+                <div class="caso-g g2">
+                    <figure class="caso-fig"><img src="casos/planazo/pz-arq.jpg" alt="Arquitectura de la información" data-zoom><figcaption><b>Arquitectura de la información</b></figcaption></figure>
+                    <figure class="caso-fig"><img src="casos/planazo/pz-userflow.jpg" alt="User flow" data-zoom><figcaption><b>User flow</b></figcaption></figure>
+                </div>
+                <figure class="caso-fig" style="margin-top:22px"><img src="casos/planazo/pz-taskflow.jpg" alt="Task flow" data-zoom><figcaption><b>Task flow</b>Plan normal y “plan sorpresa”</figcaption></figure>
+            </section>
+
+            <section class="caso-bloque">
+                <div class="caso-bloque-head"><div><span class="caso-label">05 — Diseño</span><h3 class="caso-h3">Del papel al prototipo</h3></div><p>Bocetos a mano, wireframes de baja y media fidelidad sobre una grilla de 4 columnas para iOS (márgenes de 16 px, calles de 8 px), y un UI kit propio.</p></div>
+                <div class="caso-g">
+                    <figure class="caso-fig"><img src="casos/planazo/pz-sketch.jpg" alt="Wireframes a mano" data-zoom><figcaption><b>Bocetos a mano</b></figcaption></figure>
+                    <figure class="caso-fig"><img src="casos/planazo/pz-lowfi.jpg" alt="Wireframes de baja fidelidad" data-zoom><figcaption><b>Baja fidelidad</b></figcaption></figure>
+                    <figure class="caso-fig"><img src="casos/planazo/pz-midfi.jpg" alt="Wireframes de fidelidad media" data-zoom><figcaption><b>Fidelidad media</b></figcaption></figure>
+                </div>
+                <div class="caso-g g2" style="margin-top:22px">
+                    <figure class="caso-fig"><img src="casos/planazo/pz-moodboard.jpg" alt="Moodboard" data-zoom><figcaption><b>Moodboard</b>Calma, conexión y felicidad compartida</figcaption></figure>
+                    <figure class="caso-fig"><img src="casos/planazo/pz-uikit.jpg" alt="UI kit" data-zoom><figcaption><b>UI kit</b></figcaption></figure>
+                    <figure class="caso-fig"><img src="casos/planazo/pz-icon.jpg" alt="Diseño del ícono" data-zoom><figcaption><b>Ícono</b></figcaption></figure>
+                    <figure class="caso-fig"><img src="casos/planazo/pz-patrones.jpg" alt="Patrones de diseño" data-zoom><figcaption><b>Patrones de diseño</b></figcaption></figure>
+                </div>
+            </section>
+
+            <section class="caso-bloque">
+                <div class="caso-bloque-head"><div><span class="caso-label">06 — Validación</span><h3 class="caso-h3">Heurísticas y testeo</h3></div><p>Revisé la interfaz con las 10 heurísticas de Nielsen y testeé el prototipo con tres personas. Las tres tareas se completaron con éxito.</p></div>
+                <div class="caso-g g3">
+                    <figure class="caso-fig"><img src="casos/planazo/pz-h01.jpg" alt="Heurística 1" data-zoom><figcaption><b>01</b>Visibilidad del estado del sistema</figcaption></figure>
+                    <figure class="caso-fig"><img src="casos/planazo/pz-h04.jpg" alt="Heurística 4" data-zoom><figcaption><b>04</b>Consistencia y estándares</figcaption></figure>
+                    <figure class="caso-fig"><img src="casos/planazo/pz-h05.jpg" alt="Heurística 5" data-zoom><figcaption><b>05</b>Prevención de errores</figcaption></figure>
+                </div>
+                <div class="caso-tabla-wrap" style="margin-top:22px">
+                    <table class="caso-tabla">
+                        <thead><tr><th>Tarea</th><th>Éxito</th><th>Mediana</th><th>Observación clave</th></tr></thead>
+                        <tbody>
+                            <tr><td>Crear un plan desde cero</td><td><span class="ok">100 %</span></td><td>02:15</td><td>Sumar una micro-interacción visual al iniciar la app.</td></tr>
+                            <tr><td>Votar entre planes que coinciden</td><td><span class="ok">100 %</span></td><td>00:20</td><td>Mostrar los votos restantes junto a la barra.</td></tr>
+                            <tr><td>Ver planes pasados y crear uno nuevo</td><td><span class="ok">100 %</span></td><td>01:00</td><td>Atajo desde la home para ver planes anteriores.</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="caso-citas">
+                    <figure><blockquote>“Fue muy directo; al ser guiado entendí fácilmente el flujo.”</blockquote><figcaption>Gonzalo, 23 · estudiante de arquitectura</figcaption></figure>
+                    <figure><blockquote>“Seguí los pasos de la app y fue intuitivo.”</blockquote><figcaption>Romina, 28 · abogada</figcaption></figure>
+                    <figure><blockquote>“Me gustó la sugerencia automática de horarios.”</blockquote><figcaption>Nicolás, 26 · publicista</figcaption></figure>
+                </div>
+            </section>
+
+            <section class="caso-bloque">
+                <div class="caso-bloque-head"><div><span class="caso-label">07 — Resultado</span><h3 class="caso-h3">Prototipo de alta fidelidad</h3></div><p>Disponibilidad, categorías, cálculo de coincidencias, votación, plan destacado e invitación por enlace.</p></div>
+                <figure class="caso-fig"><img src="casos/planazo/pz-final.jpg" alt="Pantallas finales de Planazo" data-zoom></figure>
+            </section>
+        </article>
+    </template>
+
+    <!-- ===================== 02 / PRODUCTO ===================== -->
+    <template id="carpeta-producto" data-tag="02 / PRODUCTO">
+        <div class="carpeta-inicio">
+            <h2 class="carpeta-titulo">Diseño de Producto</h2>
+            <p class="carpeta-sub">Modelado, materialidad e innovación. Elegí un proyecto para verlo completo.</p>
+            <div class="carpeta-indice">
+                <button class="caso-card" data-caso="sutura"><div class="card-img"><img src="casos/producto/sutura-hero.jpg" alt="Sutura"></div><h3>Sutura — Línea de mobiliario</h3><p>Banco, mesa auxiliar y perchero en chapa y caño</p><div class="caso-tags"><span>Mobiliario</span><span>Despiece</span><span>Render</span></div></button>
+                <button class="caso-card" data-caso="lumnica"><div class="card-img"><img src="casos/producto/lum-hero.jpg" alt="Lümnica" style="object-position:center 30%"></div><h3>Lümnica — Casco inteligente</h3><p>Luces de giro, freno y balizas para ciclistas</p><div class="caso-tags"><span>Ergonomía</span><span>Producto</span><span>Interacción</span></div></button>
+            </div>
+        </div>
+
+        <article class="caso" data-caso-id="sutura" hidden>
+            <header class="caso-head">
+                <span class="caso-kicker">Diseño de Producto · Mobiliario</span>
+                <h2 class="caso-titulo">Sutura</h2>
+                <p class="caso-bajada">“Diseño metálico que expone encastres y superposiciones como lenguaje constructivo y artesanal, logrando una apariencia liviana a la vista y auténtica en su materialidad.”</p>
+                <div class="caso-meta">
+                    <div><b>Materia</b>Incubadora de proyectos II</div>
+                    <div><b>Docente</b>Ignacio Novillo</div>
+                    <div><b>Piezas</b>Banco, mesa auxiliar, perchero</div>
+                    <div><b>Herramientas</b>Modelado y render 3D, Illustrator</div>
+                </div>
+            </header>
+            <div class="caso-hero"><img src="casos/producto/sutura-hero.jpg" alt="Render de la línea Sutura" data-zoom></div>
+            <div class="caso-chips"><span>Corte láser</span><span>Plegado</span><span>Soldadura chapa + caño</span><span>Ensamble atornillado</span><span>Chapa perforada</span><span>Fieltro autoadhesivo</span></div>
+            <div class="caso-texto">
+                <p>Una sutura es una costura que queda a la vista. En esta línea, cada unión (el pliegue de la chapa, el caño soldado, el tornillo) forma parte del diseño.</p>
+                <p>Las tres piezas comparten el mismo lenguaje: planos de chapa que se superponen, caños en ritmo y un color distinto en los cantos para marcar dónde se encuentran las partes.</p>
+            </div>
+            <div class="caso-proceso">
+                <div><b>01</b><h4>Concepto</h4><p>La unión como protagonista.</p></div>
+                <div><b>02</b><h4>Bocetos</h4><p>Forma, encastres y medidas.</p></div>
+                <div><b>03</b><h4>Despiece</h4><p>Piezas, procesos y uniones.</p></div>
+                <div><b>04</b><h4>Planos</h4><p>Vistas acotadas en mm.</p></div>
+                <div><b>05</b><h4>Render</h4><p>Ambientación final.</p></div>
+            </div>
+            <section class="caso-bloque">
+                <div class="caso-bloque-head"><div><span class="caso-label">01 — Bocetos</span><h3 class="caso-h3">Pensar con el lápiz</h3></div><p>Antes del 3D, la exploración: cómo se apoya la tapa sobre el pie, cómo una tira de chapa plegada se vuelve gancho y qué altura necesita cada pieza.</p></div>
+                <figure class="caso-fig"><img src="casos/producto/sutura-boceto-1.jpg" alt="Boceto de exploración de forma" data-zoom><figcaption><b>Lámina 1</b>Exploración de forma</figcaption></figure>
+                <div class="caso-g g2" style="margin-top:22px">
+                    <figure class="caso-fig"><img src="casos/producto/sutura-boceto-2.jpg" alt="Boceto de detalles de encastre" data-zoom><figcaption><b>Lámina 2</b>Detalles de encastre</figcaption></figure>
+                    <figure class="caso-fig"><img src="casos/producto/sutura-boceto-3.jpg" alt="Croquis acotados" data-zoom><figcaption><b>Lámina 3</b>Croquis acotados</figcaption></figure>
+                </div>
+            </section>
+            <section class="caso-bloque">
+                <div class="caso-bloque-head"><div><span class="caso-label">02 — Desarrollo</span><h3 class="caso-h3">Despiece y planos</h3></div><p>Cada pieza se explica en vista armada, explotada y planos. Las uniones atornilladas permiten desarmar los muebles para transportarlos.</p></div>
+                <div class="caso-g">
+                    <figure class="caso-fig"><img src="casos/producto/sutura-det-banco.jpg" alt="Banco: despiece y planos" data-zoom><figcaption><b>Banco para 2 personas</b>1336 × 401 mm</figcaption></figure>
+                    <figure class="caso-fig"><img src="casos/producto/sutura-det-mesa.jpg" alt="Mesa auxiliar: despiece y planos" data-zoom><figcaption><b>Mesa auxiliar</b>653 mm de alto</figcaption></figure>
+                    <figure class="caso-fig"><img src="casos/producto/sutura-det-perchero.jpg" alt="Perchero: despiece y planos" data-zoom><figcaption><b>Perchero de pie</b>1628 mm de alto</figcaption></figure>
+                </div>
+            </section>
+            <section class="caso-bloque">
+                <div class="caso-bloque-head"><div><span class="caso-label">03 — Resultado</span><h3 class="caso-h3">La línea completa</h3></div><p>Paleta suave y cantos en contraste: las piezas conviven en un mismo ambiente y se leen como familia.</p></div>
+                <div class="caso-g g3">
+                    <figure class="caso-fig"><img src="casos/producto/sutura-perchero.jpg" alt="Perchero" data-zoom style="aspect-ratio:3/5;object-fit:cover"><figcaption><b>Perchero</b></figcaption></figure>
+                    <figure class="caso-fig"><img src="casos/producto/sutura-banco.jpg" alt="Banco" data-zoom style="aspect-ratio:3/5;object-fit:cover"><figcaption><b>Banco</b></figcaption></figure>
+                    <figure class="caso-fig"><img src="casos/producto/sutura-mesa.jpg" alt="Mesa auxiliar" data-zoom style="aspect-ratio:3/5;object-fit:cover"><figcaption><b>Mesa auxiliar</b></figcaption></figure>
+                </div>
+                <div class="caso-g g2" style="margin-top:22px">
+                    <figure class="caso-fig"><img src="proyectos/4.png" alt="Lámina 1 de Sutura" data-zoom><figcaption><b>Lámina</b>Ambientación</figcaption></figure>
+                    <figure class="caso-fig"><img src="proyectos/5.png" alt="Lámina 2 de Sutura" data-zoom><figcaption><b>Lámina</b>Despiece y planos</figcaption></figure>
+                </div>
+            </section>
+        </article>
+
+        <article class="caso" data-caso-id="lumnica" hidden>
+            <header class="caso-head">
+                <span class="caso-kicker">Diseño de Producto · Ergonomía</span>
+                <h2 class="caso-titulo">Lümnica</h2>
+                <p class="caso-bajada">Casco inteligente para ciclistas con luces de giro, freno y balizas que se manejan desde un comando en el manubrio, para que quien viene atrás entienda qué vas a hacer.</p>
+                <div class="caso-meta">
+                    <div><b>Materia</b>Ergonomía</div>
+                    <div><b>Docente</b>Pablo Hamra</div>
+                    <div><b>Conexión</b>Bluetooth casco–comando</div>
+                    <div><b>Carga</b>USB tipo C</div>
+                </div>
+            </header>
+
+            <div class="lum-hero">
+                <img src="casos/producto/lum-hero.jpg" alt="Casco Lümnica con guiño encendido" data-zoom>
+                <div class="lum-hero-txt">
+                    <span class="caso-label">El problema</span>
+                    <p>Para avisar que dobla, un ciclista tiene que soltar el manubrio y hacer un gesto con el brazo que, de noche o con tránsito, casi nadie ve.</p>
+                    <span class="caso-label">La propuesta</span>
+                    <p>Llevar esas señales al casco, a la altura de los ojos de los conductores, y activarlas con el pulgar sin soltar el manubrio.</p>
+                </div>
+            </div>
+
+            <section class="caso-bloque">
+                <div class="caso-bloque-head"><div><span class="caso-label">01 — Bocetos</span><h3 class="caso-h3">Ideación con marcador</h3></div><p>Exploré cómo leer el casco desde atrás, cómo organizar los botones del comando para usarlos al tacto y qué información tiene que dar cada luz.</p></div>
+                <figure class="caso-fig"><img src="casos/producto/lum-boceto-1.jpg" alt="Boceto de ideación del casco y variantes de luces traseras" data-zoom><figcaption><b>Lámina 1</b>Ideación y tres variantes para las señales traseras</figcaption></figure>
+                <div class="caso-g g2" style="margin-top:22px">
+                    <figure class="caso-fig"><img src="casos/producto/lum-boceto-2.jpg" alt="Boceto del comando en el manubrio" data-zoom><figcaption><b>Lámina 2</b>Comando en el manubrio</figcaption></figure>
+                    <figure class="caso-fig"><img src="casos/producto/lum-boceto-3.jpg" alt="Boceto de señales y carga" data-zoom><figcaption><b>Lámina 3</b>Señales y carga</figcaption></figure>
+                </div>
+            </section>
+
+            <section class="caso-bloque caso-oscuro">
+                <div class="caso-bloque-head"><div><span class="caso-label">02 — Señales</span><h3 class="caso-h3">Un lenguaje de luces que se entiende sin leer</h3></div><p>Cada función tiene su forma y su color: flechas ámbar para girar, luz roja central para frenar y un anillo para las balizas. El casco se enciende al usarlo y se apaga al dejarlo.</p></div>
+                <div class="lum-funciones">
+                    <figure><img src="casos/producto/lum-trasera.jpg" alt="Vista trasera con flechas de giro" data-zoom><figcaption><b>Giro</b>Flechas ámbar a cada lado y barra de luz trasera.</figcaption></figure>
+                    <figure><img src="casos/producto/lum-freno-balizas.jpg" alt="Luz de freno y balizas" data-zoom><figcaption><b>Freno y balizas</b>Luz roja central o anillo ámbar.</figcaption></figure>
+                    <figure><img src="casos/producto/lum-bateria.jpg" alt="Indicador de batería en la barra trasera" data-zoom><figcaption><b>Batería</b>La barra trasera se pone verde o roja según la carga.</figcaption></figure>
+                    <figure><img src="casos/producto/lum-usbc.jpg" alt="Puerto USB-C en la parte trasera" data-zoom><figcaption><b>Carga</b>Puerto USB-C universal en la parte trasera.</figcaption></figure>
+                </div>
+            </section>
+
+            <section class="caso-bloque">
+                <div class="caso-bloque-head"><div><span class="caso-label">03 — Ergonomía</span><h3 class="caso-h3">Todo al alcance del pulgar</h3></div><p>El comando se sujeta al manubrio con una abrazadera de goma. El botón de freno es el más grande y queda arriba; giro y balizas tienen forma de flecha y triángulo para reconocerlos al tacto. El botón en uso se ilumina.</p></div>
+                <div class="caso-g lum-comando">
+                    <figure class="caso-fig"><img src="casos/producto/lum-comando.jpg" alt="Comando de manubrio con botones de freno, giro y balizas" data-zoom><figcaption><b>Comando</b>Terminaciones que se relacionan con el casco</figcaption></figure>
+                    <figure class="caso-fig"><img src="casos/producto/lum-manubrio.jpg" alt="Comando montado en el manubrio de la bicicleta" data-zoom><figcaption><b>En uso</b>Montado junto al freno, sin soltar el manubrio</figcaption></figure>
+                </div>
+            </section>
+
+            <section class="caso-bloque">
+                <div class="caso-bloque-head"><div><span class="caso-label">04 — Entrega</span><h3 class="caso-h3">Lámina</h3></div><p>La lámina completa del proyecto.</p></div>
+                <figure class="caso-fig angosta"><img src="proyectos/3.png" alt="Lámina de Lümnica" data-zoom></figure>
+            </section>
+        </article>
+    </template>
+
+    <!-- ===================== 03 / GRÁFICO ===================== -->
+    <template id="carpeta-grafico" data-tag="03 / GRÁFICO">
+        <article class="caso">
+            <header class="caso-head">
+                <span class="caso-kicker">Diseño Gráfico · Identidad visual</span>
+                <h2 class="caso-titulo">AMTC</h2>
+                <p class="caso-bajada">Desarrollo integral de la nueva identidad visual de la Asociación de Municipalidades Turísticas de Chile: del concepto “Chile de punta a punta” al isologotipo, el manual de marca y su sistema de aplicaciones.</p>
+                <div class="caso-meta">
+                    <div><b>Materia</b>Branding en Palermo · Diseño Gráfico</div>
+                    <div><b>Cátedra</b>Alarcón</div>
+                    <div><b>Año</b>2025</div>
+                    <div><b>Herramientas</b>Illustrator, Photoshop</div>
+                </div>
+            </header>
+
+            <div class="spread">
+                <div class="pg tapa"><i class="leaf c1"></i><i class="leaf c2"></i><i class="leaf c3"></i><i class="leaf c4"></i><i class="leaf c5"></i><span class="t">Manual de marca</span><img src="casos/amtc/logo-blanco.svg" alt="AMTC"></div>
+                <div class="pg">
+                    <h4 style="text-align:left;padding-left:8cqw">Índice</h4>
+                    <div class="indice">
+                        <div><b style="color:#D9683E">Introducción</b><span>Análisis de la marca · 6</span><span>Partido conceptual · 8</span><span>Partido gráfico · 9</span></div>
+                        <div><b style="color:#3A6896">Identidad gráfica</b><span>Isologotipo · 12 — Escala de grises · 13</span><span>Positivo · 14 — Negativo · 15</span><span>Paleta de colores · 16 — Tipografía · 17</span><span>Grilla constructiva · 18 — Reducción · 19</span><span>Usos prohibidos · 20 — Usos permitidos · 21</span></div>
+                        <div><b style="color:#458D4B">Sistema · 24</b><span>Papelería, merchandising, indumentaria, señalética y digital</span></div>
+                        <div><b style="color:#EBB258">Contacto · 36</b></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="caso-texto">
+                <p>Partiendo del concepto <strong>“Chile de punta a punta”</strong>, busqué representar el territorio completo en un sistema gráfico sólido y funcional: la estrella de la bandera, la cordillera, la hoja que brota, la tierra cálida del norte y la ola del Pacífico.</p>
+                <p>El resultado, plasmado en un manual de marca de 36 páginas, abarca la construcción del logo y sus aplicaciones en papelería, merchandising, indumentaria, señalética y piezas digitales.</p>
+            </div>
+
+            <section class="caso-bloque">
+                <div class="caso-bloque-head"><div><span class="caso-label">01 — Introducción</span><h3 class="caso-h3">Análisis y concepto</h3></div><p>Primero se define qué es la marca y desde dónde se piensa. El partido conceptual guía la búsqueda de imágenes, texturas y colores.</p></div>
+                <div class="spreads">
+                    <div class="spread">
+                        <div class="pg pg-titulo"><div><div class="sm">Manual de marca</div><div class="big">Intro&shy;ducción</div></div></div>
+                        <div class="pg mv">
+                            <h4>Análisis de la marca</h4>
+                            <h5>Misión</h5><p>Fomentar el turismo local a través de acciones estratégicas, servicios de información y programas de capacitación, consolidando a los municipios asociados y posicionando sus territorios como destinos de interés.</p>
+                            <h5>Visión</h5><p>Constituirse como la organización referente en turismo y desarrollo económico municipal, promoviendo el bienestar y una mejor calidad de vida mediante la innovación, la colaboración y la capacitación profesional.</p>
+                            <h5>Objetivos</h5><ul><li>Impulsar el turismo con programas sociales, educativos y de difusión.</li><li>Capacitar y profesionalizar a autoridades y personal municipal.</li><li>Brindar información y recursos audiovisuales para promover los destinos.</li><li>Fortalecer la colaboración entre municipios y con instituciones externas.</li></ul>
+                            <div class="pf">Introducción · manual de marca</div><b class="pn" style="--pc:#D9683E">7</b>
+                        </div>
+                    </div>
+                    <div class="spread">
+                        <div class="pg pg-cita"><span class="k">Partido conceptual</span><div class="q">“Chile de punta a punta”</div><div class="pf" style="color:#fff">Introducción · manual de marca</div><b class="pn" style="--pc:#fff;color:#D9683E">8</b></div>
+                        <div class="pg"><h4>Partido gráfico</h4><img src="casos/amtc/amtc-moodboard.jpg" alt="Moodboard del partido gráfico" style="width:100%;border-radius:1cqw;margin-top:6cqw;cursor:zoom-in" data-zoom><p class="cap">Cordillera, dunas, brotes, Atacama, volcanes, el Pacífico y la bandera.</p><div class="pf">Introducción · manual de marca</div><b class="pn" style="--pc:#D9683E">9</b></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="caso-bloque">
+                <div class="caso-bloque-head"><div><span class="caso-label">02 — Identidad gráfica</span><h3 class="caso-h3">Isologotipo, color y tipografía</h3></div><p>El símbolo funciona en color, en escala de grises y en negativo sobre el azul institucional, siempre construido sobre una grilla modular.</p></div>
+                <div class="spreads">
+                    <div class="spread">
+                        <div class="pg pg-logo"><h4>Isologotipo</h4><img src="casos/amtc/logo-color.svg" alt="Isologotipo a color"><div class="pf">Identidad gráfica · manual de marca</div><b class="pn">12</b></div>
+                        <div class="pg pg-logo"><h4>Escala de grises</h4><img src="casos/amtc/logo-gris.svg" alt="Isologotipo en escala de grises">
+                            <div class="kgris"><div><i style="background:#6D6E71"></i>K 60 %</div><div><i style="background:#C7C8CA"></i>K 25 %</div><div><i style="background:#BCBEC0"></i>K 30 %</div><div><i style="background:#939598"></i>K 45 %</div><div><i style="background:#58595B"></i>K 75 %</div></div>
+                            <div class="pf">Identidad gráfica · manual de marca</div><b class="pn">13</b></div>
+                    </div>
+                    <div class="spread">
+                        <div class="pg pg-logo"><h4>Positivo</h4><img src="casos/amtc/logo-azul.svg" alt="Isologotipo en positivo"><div class="pf">Identidad gráfica · manual de marca</div><b class="pn">14</b></div>
+                        <div class="pg pg-logo pg-azul"><h4>Negativo</h4><img src="casos/amtc/logo-blanco.svg" alt="Isologotipo en negativo"><div class="pf">Identidad gráfica · manual de marca</div><b class="pn" style="--pc:#fff;color:#3A6896">15</b></div>
+                    </div>
+                    <div class="spread">
+                        <div class="pg"><h4>Paleta de colores</h4>
+                            <div class="paleta">
+                                <div><i style="background:#3A6896"></i><span>PANTONE 285 C<br>HEX #3A6896</span></div>
+                                <div><i style="background:#458D4B"></i><span>PANTONE 361 C<br>HEX #458D4B</span></div>
+                                <div><i style="background:#89BA61"></i><span>PANTONE 368 C<br>HEX #89BA61</span></div>
+                                <div><i style="background:#EBB258"></i><span>PANTONE 1375 C<br>HEX #EBB258</span></div>
+                                <div><i style="background:#D9683E"></i><span>PANTONE 172 C<br>HEX #D9683E</span></div>
+                            </div>
+                            <div class="pf">Identidad gráfica · manual de marca</div><b class="pn">16</b></div>
+                        <div class="pg pg-azul tipo"><h4>Tipografía</h4>
+                            <div class="lbl">Principal</div>
+                            <div class="baloo">Baloo Bhaijaan — Regular</div>
+                            <div class="abc">ABCDEFGHIJKLMNÑOPQRSTUVWXYZ<br>abcdefghijklmnñopqrstuvwxyz<br>1234567890</div>
+                            <div class="lbl">Secundaria</div>
+                            <div class="acu"><img src="casos/amtc/amtc-acumin.jpg" alt="Acumin Variable Concept"></div>
+                            <div class="pf">Identidad gráfica · manual de marca</div><b class="pn" style="--pc:#fff;color:#3A6896">17</b></div>
+                    </div>
+                    <div class="spread">
+                        <div class="pg"><h4>Grilla constructiva</h4>
+                            <div class="grilla"><img src="casos/amtc/logo-color.svg" alt="Isologotipo sobre grilla"><svg viewBox="16 12 740 334" aria-hidden="true"><g fill="none" stroke="#D9683E" stroke-width="1.6" opacity=".85"><circle cx="159" cy="70" r="44"/><circle cx="241" cy="156" r="52"/><circle cx="300" cy="300" r="120"/><circle cx="130" cy="222" r="80"/></g></svg></div>
+                            <p class="cap">Las curvas del símbolo se construyen a partir de circunferencias sobre una grilla modular.</p>
+                            <div class="pf">Identidad gráfica · manual de marca</div><b class="pn">18</b></div>
+                        <div class="pg"><h4>Reducción</h4>
+                            <div class="reduccion"><img src="casos/amtc/logo-color.svg" alt="" style="width:44%"><img src="casos/amtc/logo-color.svg" alt="" style="width:28%"><div class="banda"><img src="casos/amtc/logo-blanco.svg" alt="" style="width:24%"></div></div>
+                            <div class="pf">Identidad gráfica · manual de marca</div><b class="pn">19</b></div>
+                    </div>
+                    <div class="spread">
+                        <div class="pg"><h4>Usos prohibidos</h4>
+                            <div class="usos">
+                                <figure><div class="box x"><img src="casos/amtc/logo-color.svg" alt="" style="transform:rotate(-24deg)"></div><figcaption>No rotar</figcaption></figure>
+                                <figure><div class="box x"><img src="casos/amtc/logo-color.svg" alt="" style="transform:scaleX(1.35) scaleY(.75)"></div><figcaption>No estirar ni estrechar</figcaption></figure>
+                                <figure><div class="box x" style="background:#458D4B"><img src="casos/amtc/logo-color.svg" alt=""></div><figcaption>No colocar sobre fondos del color del isologotipo</figcaption></figure>
+                                <figure><div class="box x"><img src="casos/amtc/logo-color.svg" alt="" style="transform:scaleX(-1)"></div><figcaption>No girar ni voltear el isotipo</figcaption></figure>
+                            </div>
+                            <div class="pf">Identidad gráfica · manual de marca</div><b class="pn">20</b></div>
+                        <div class="pg"><h4>Usos permitidos</h4>
+                            <img src="casos/amtc/isotipo-color.svg" alt="Isotipo solo" style="width:30%;margin:2cqw auto 0">
+                            <div class="monos"><img src="casos/amtc/logo-naranja.svg" alt=""><img src="casos/amtc/logo-verde.svg" alt=""><img src="casos/amtc/logo-amarillo.svg" alt=""><img src="casos/amtc/logo-azul.svg" alt=""><img src="casos/amtc/logo-verdeclaro.svg" alt=""><img src="casos/amtc/logo-negro.svg" alt=""></div>
+                            <div style="background:#111;margin-top:6cqw;padding:4cqw;display:grid;place-items:center;border-radius:1cqw"><img src="casos/amtc/logo-blanco.svg" alt="" style="width:40%"></div>
+                            <p class="cap">Isotipo solo y versiones monocromáticas en los colores de la paleta.</p>
+                            <div class="pf">Identidad gráfica · manual de marca</div><b class="pn">21</b></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="caso-bloque">
+                <div class="caso-bloque-head"><div><span class="caso-label">03 — Sistema</span><h3 class="caso-h3">Aplicaciones</h3></div><p>Las hojas del isotipo se separan y se vuelven un recurso gráfico propio: aparecen recortadas en papelería, como patrón en objetos y como marco para fotos del territorio. El sistema abarca papelería, merchandising, viaje, indumentaria, señalética, vía pública y piezas digitales.</p></div>
+                <div class="spreads">
+                    <div class="spread">
+                        <div class="pg"><h4>Papelería institucional</h4><div class="its c1"><figure class="it" style="--mh:50cqw"><img src="casos/amtc/sistema/carpeta.jpg" alt="Carpeta 3 solapas" data-zoom><figcaption>Carpeta 3 solapas</figcaption></figure></div><div class="its c2"><figure class="it" style="--mh:50cqw"><img src="casos/amtc/sistema/tarjetas.jpg" alt="Tarjetas personales" data-zoom><figcaption>Tarjetas personales</figcaption></figure><figure class="it" style="--mh:50cqw"><img src="casos/amtc/sistema/sobres.jpg" alt="Sobres" data-zoom><figcaption>Sobres</figcaption></figure></div><div class="pf">Sistema · manual de marca</div><b class="pn" style="--pc:#458D4B">24</b></div>
+                        <div class="pg"><h4>Papelería y librería</h4><div class="its c2"><figure class="it" style="--mh:50cqw"><img src="casos/amtc/sistema/agenda.jpg" alt="Agenda 2026" data-zoom><figcaption>Agenda 2026</figcaption></figure><figure class="it" style="--mh:50cqw"><img src="casos/amtc/sistema/cuaderno.jpg" alt="Cuaderno" data-zoom><figcaption>Cuaderno</figcaption></figure></div><div class="its c2"><figure class="it" style="--mh:42cqw"><img src="casos/amtc/sistema/calendario.jpg" alt="Calendario" data-zoom><figcaption>Calendario</figcaption></figure><figure class="it" style="--mh:42cqw"><img src="casos/amtc/sistema/senalador.jpg" alt="Señaladores" data-zoom><figcaption>Señaladores</figcaption></figure></div><div class="pf">Sistema · manual de marca</div><b class="pn" style="--pc:#458D4B">25</b></div>
+                    </div>
+                    <div class="spread">
+                        <div class="pg"><h4>Merchandising</h4><div class="its c3"><figure class="it" style="--mh:54cqw"><img src="casos/amtc/sistema/botella.jpg" alt="Botella" data-zoom><figcaption>Botella</figcaption></figure><figure class="it" style="--mh:40cqw"><img src="casos/amtc/sistema/taza.jpg" alt="Taza" data-zoom><figcaption>Taza</figcaption></figure><figure class="it" style="--mh:54cqw"><img src="casos/amtc/sistema/tote.jpg" alt="Tote bag" data-zoom><figcaption>Tote bag</figcaption></figure></div><div class="its c3"><figure class="it" style="--mh:24cqw"><img src="casos/amtc/sistema/lapicera.jpg" alt="Lapicera" data-zoom><figcaption>Lapicera</figcaption></figure><figure class="it" style="--mh:22cqw"><img src="casos/amtc/sistema/clips.jpg" alt="Clips" data-zoom><figcaption>Clips</figcaption></figure><figure class="it" style="--mh:40cqw"><img src="casos/amtc/sistema/portalapicero.jpg" alt="Portalápices" data-zoom><figcaption>Portalápices</figcaption></figure></div><div class="pf">Sistema · manual de marca</div><b class="pn" style="--pc:#458D4B">26</b></div>
+                        <div class="pg"><h4>Accesorios</h4><div class="its c2"><figure class="it" style="--mh:56cqw"><img src="casos/amtc/sistema/mochila.jpg" alt="Mochila" data-zoom><figcaption>Mochila</figcaption></figure><figure class="it" style="--mh:36cqw"><img src="casos/amtc/sistema/gorro.jpg" alt="Gorro" data-zoom><figcaption>Gorro</figcaption></figure></div><div class="its c4"><figure class="it" style="--mh:30cqw"><img src="casos/amtc/sistema/llavero.jpg" alt="Llavero" data-zoom><figcaption>Llavero</figcaption></figure><figure class="it" style="--mh:20cqw"><img src="casos/amtc/sistema/pulsera.jpg" alt="Pulsera" data-zoom><figcaption>Pulsera</figcaption></figure><figure class="it" style="--mh:32cqw"><img src="casos/amtc/sistema/encendedor.jpg" alt="Encendedor" data-zoom><figcaption>Encendedor</figcaption></figure><figure class="it" style="--mh:30cqw"><img src="casos/amtc/sistema/pendrive.jpg" alt="Pendrive" data-zoom><figcaption>Pendrive</figcaption></figure></div><div class="pf">Sistema · manual de marca</div><b class="pn" style="--pc:#458D4B">27</b></div>
+                    </div>
+                    <div class="spread">
+                        <div class="pg"><h4>Kit de viaje</h4><div class="its c1"><figure class="it" style="--mh:46cqw"><img src="casos/amtc/sistema/porta-pasaporte.jpg" alt="Porta pasaporte" data-zoom><figcaption>Porta pasaporte</figcaption></figure></div><div class="its c2"><figure class="it" style="--mh:48cqw"><img src="casos/amtc/sistema/funda-valija.jpg" alt="Funda de valija" data-zoom><figcaption>Funda de valija</figcaption></figure><figure class="it" style="--mh:48cqw"><img src="casos/amtc/sistema/etiqueta-equipaje.jpg" alt="Etiquetas de equipaje" data-zoom><figcaption>Etiquetas de equipaje</figcaption></figure></div><div class="pf">Sistema · manual de marca</div><b class="pn" style="--pc:#458D4B">28</b></div>
+                        <div class="pg"><h4>Descanso en viaje</h4><div class="its c2"><figure class="it" style="--mh:44cqw"><img src="casos/amtc/sistema/almohada.jpg" alt="Almohada de cuello" data-zoom><figcaption>Almohada de cuello</figcaption></figure><figure class="it" style="--mh:32cqw"><img src="casos/amtc/sistema/antifaz.jpg" alt="Antifaz" data-zoom><figcaption>Antifaz</figcaption></figure></div><div class="its c2"><figure class="it" style="--mh:32cqw"><img src="casos/amtc/sistema/cartuchera.jpg" alt="Cartuchera" data-zoom><figcaption>Cartuchera</figcaption></figure><figure class="it" style="--mh:44cqw"><img src="casos/amtc/sistema/billetera.jpg" alt="Billetera" data-zoom><figcaption>Billetera</figcaption></figure></div><div class="pf">Sistema · manual de marca</div><b class="pn" style="--pc:#458D4B">29</b></div>
+                    </div>
+                    <div class="spread">
+                        <div class="pg"><h4>Indumentaria</h4><div class="its c2"><figure class="it" style="--mh:100cqw"><img src="casos/amtc/sistema/uniforme.jpg" alt="Uniforme" data-zoom><figcaption>Uniforme</figcaption></figure><figure class="it" style="--mh:40cqw"><img src="casos/amtc/sistema/gorro.jpg" alt="Gorro" data-zoom><figcaption>Gorro</figcaption></figure></div><div class="pf">Sistema · manual de marca</div><b class="pn" style="--pc:#458D4B">30</b></div>
+                        <div class="pg"><h4>Credenciales</h4><div class="its c1"><figure class="it" style="--mh:100cqw"><img src="casos/amtc/sistema/credenciales.jpg" alt="Credenciales por área" data-zoom><figcaption>Credenciales por área</figcaption></figure></div><div class="pf">Sistema · manual de marca</div><b class="pn" style="--pc:#458D4B">31</b></div>
+                    </div>
+                    <div class="spread">
+                        <div class="pg"><h4>Señalética</h4><div class="its c1"><figure class="it" style="--mh:58cqw"><img src="casos/amtc/sistema/senaletica.jpg" alt="Señalética de recorrido" data-zoom><figcaption>Señalética de recorrido</figcaption></figure></div><div class="its c1"><figure class="it" style="--mh:44cqw"><img src="casos/amtc/sistema/vehiculo.jpg" alt="Vehículo institucional" data-zoom><figcaption>Vehículo institucional</figcaption></figure></div><div class="pf">Sistema · manual de marca</div><b class="pn" style="--pc:#458D4B">32</b></div>
+                        <div class="pg"><h4>Vía pública</h4><div class="its c1"><figure class="it" style="--mh:52cqw"><img src="casos/amtc/sistema/aviso.jpg" alt="Aviso en parada de colectivo" data-zoom><figcaption>Aviso en parada de colectivo</figcaption></figure></div><div class="its c1"><figure class="it" style="--mh:46cqw"><img src="casos/amtc/sistema/folleto.jpg" alt="Folleto: frente, dorso e interior" data-zoom><figcaption>Folleto: frente, dorso e interior</figcaption></figure></div><div class="pf">Sistema · manual de marca</div><b class="pn" style="--pc:#458D4B">33</b></div>
+                    </div>
+                    <div class="spread">
+                        <div class="pg"><h4>Sitio web</h4><div class="its c1"><figure class="it" style="--mh:70cqw"><img src="casos/amtc/sistema/web.jpg" alt="Sitio web" data-zoom><figcaption>Sitio web</figcaption></figure></div><div class="pf">Sistema · manual de marca</div><b class="pn" style="--pc:#458D4B">34</b></div>
+                        <div class="pg"><h4>Redes y presentación</h4><div class="its c1"><figure class="it" style="--mh:56cqw"><img src="casos/amtc/sistema/instagram.jpg" alt="Instagram" data-zoom><figcaption>Instagram</figcaption></figure></div><div class="its c1"><figure class="it" style="--mh:40cqw"><img src="casos/amtc/sistema/presentacion.jpg" alt="Plantilla de presentación" data-zoom><figcaption>Plantilla de presentación</figcaption></figure></div><div class="pf">Sistema · manual de marca</div><b class="pn" style="--pc:#458D4B">35</b></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="caso-bloque">
+                <div class="caso-bloque-head"><div><span class="caso-label">04 — Entrega</span><h3 class="caso-h3">Lámina de presentación</h3></div><p>La síntesis del proyecto en una sola lámina: isologotipo, paleta, partido gráfico, tipografías y aplicaciones principales.</p></div>
+                <figure class="caso-fig angosta"><img src="proyectos/2.png" alt="Lámina AMTC" data-zoom></figure>
+            </section>
+        </article>
+
+    </template>
+
+    <!-- ===================== 04 / EVENTOS ===================== -->
+    <template id="carpeta-eventos" data-tag="04 / EVENTOS">
+        <article class="caso">
+            <header class="caso-head">
+                <span class="caso-kicker">Packaging · Objetos a medida</span>
+                <h2 class="caso-titulo">Eventos &amp; Personalizados</h2>
+                <p class="caso-bajada">Desarrollo de packaging a medida, papelería y detalles exclusivos para marcas y eventos. Cada pieza parte de quién la recibe.</p>
+                <div class="caso-meta"><div><b>Proceso</b>Brief, propuesta, ajustes con feedback y producción</div><div><b>Herramientas</b>Canva, Photoshop, Illustrator</div></div>
+            </header>
+            <div class="caso-galeria">
+                <figure><img src="proyectos/16.png" alt="Mazos de cartas Let's Play" data-zoom><figcaption><b>Lauti · Bar Mitzvá</b>Mazos de cartas “Let’s Play” en azul noche y dorado.</figcaption></figure>
+                <figure><img src="proyectos/12.png" alt="Frascos toto" data-zoom><figcaption><b>toto · Bar Mitzvá</b>Etiquetas para frascos con sellos “Por más dulzura”.</figcaption></figure>
+                <figure><img src="proyectos/14.png" alt="Kit de Shabbat" data-zoom><figcaption><b>Lola Groshaus · Bat Mitzvá</b>Kit de Shabbat con bolsa, caja con ventana y vaso.</figcaption></figure>
+                <figure><img src="proyectos/15.png" alt="Destapadores Zucho" data-zoom><figcaption><b>Zucho · 50 años</b>Destapadores-botella con etiqueta personalizada.</figcaption></figure>
+                <figure><img src="proyectos/13.png" alt="Porta documentos Shaluvim" data-zoom><figcaption><b>Shaluvim ’25</b>Porta documentos de viaje con el nombre de cada viajero.</figcaption></figure>
+                <figure><img src="proyectos/11.png" alt="Cuadro FAMILY" data-zoom><figcaption><b>FAMILY</b>Cuadro con letras caladas y fotos familiares.</figcaption></figure>
+            </div>
+        </article>
+    </template>
+
+</section>
+
+    <section id="estudios" class="seccion">
+        <h2>Mis estudios</h2>
+
+        <ul class="lista-estudios">
+            <li>
+                <h3>Curso de líderes</h3>
+                <p>Cissab</p>
+                <span>2020 - 2021 | Graduada</span>
+            </li>
+            <li>
+                <h3>Diseño de productos</h3>
+                <p>Universidad de Palermo</p>
+                <span>2023 - 2025 | Graduada</span>
+            </li>
+            <li>
+                <h3>Licenciatura en Negocios del Diseño y la Comunicación</h3>
+                <p>Universidad de Palermo</p>
+                <span>2023 - 2026 | 75% completado</span>
+            </li>
+            <li>
+                <h3>Diseño UX/UI</h3>
+                <p>Coderhouse</p>
+                <span>2025 | Graduada</span>
+            </li>
+            <li>
+                <h3>Diseño UX/UI Avanzado</h3>
+                <p>Coderhouse</p>
+                <span>2026 | 25% completado</span>
+            </li>
+        </ul>
+    </section>
+<!-- SECCIÓN HERRAMIENTAS -->
+    <section id="herramientas" class="seccion">
+        <h2>Herramientas</h2>
+        <div class="herramientas-imagen-contenedor">
+            <img src="herramientas-macbook.png" alt="Herramientas - Lucía Leibovich">
+        </div>
+    </section>
+    <section id="logros" class="seccion">
+        <h2>Reconocimientos y Premios</h2>
+
+        <p class="logros-introduccion">
+            Una selección de los premios y certificaciones obtenidos durante mi formación en la Universidad de Palermo,
+            que avalan mi dedicación y excelencia académica en Diseño de Productos y UX/UI.
+        </p>
+
+        <div class="certificados-grid">
+
+            <div class="certificado-item">
+                <img src="certificados/premio-industrial-1.png" alt="1º Premio Proyecto Industrial Palermo">
+                <div class="certificado-info">
+                    <h3>1º Premio</h3>
+                    <p>Proyecto Industrial Palermo</p>
+                    <span>"La cuchara: diseño, exclusión e inclusión..."</span>
+                </div>
+            </div>
+
+            <div class="certificado-item">
+                <img src="certificados/premio-emprendedores.png" alt="1º Premio Emprendedores Creativos">
+                <div class="certificado-info">
+                    <h3>1º Premio</h3>
+                    <p>Emprendedores Creativos</p>
+                    <span>"Idea emprendedora: Eat Ware"</span>
+                </div>
+            </div>
+
+            <div class="certificado-item">
+                <img src="certificados/premio-moda.png" alt="2º Premio Proyecto Moda Palermo">
+                <div class="certificado-info">
+                    <h3>2º Premio</h3>
+                    <p>Proyecto Moda Palermo</p>
+                    <span>"FRAGILIDAD VIVA"</span>
+                </div>
+            </div>
+
+            <div class="certificado-item">
+                <img src="certificados/premio-digital.png" alt="2º Premio Entornos Digitales">
+                <div class="certificado-info">
+                    <h3>2º Premio</h3>
+                    <p>Entornos Digitales</p>
+                    <span>"Desarrollo de un sitio web de alta complejidad"</span>
+                </div>
+            </div>
+
+            <div class="certificado-item">
+                <img src="certificados/premio-industrial-3.png" alt="3º Premio Proyecto Industrial Palermo">
+                <div class="certificado-info">
+                    <h3>3º Premio</h3>
+                    <p>Proyecto Industrial Palermo</p>
+                    <span>"Sello"</span>
+                </div>
+            </div>
+
+            <div class="certificado-item">
+                <img src="certificados/certificado-lideres.png" alt="Certificado Curso de Formación de Jóvenes Líderes">
+                <div class="certificado-info">
+                    <h3>Certificado</h3>
+                    <p>Curso de Jóvenes Líderes</p>
+                    <span>CISSAB | Modalidad online</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+<!-- ================= SECCIÓN CONTACTO ================= -->
+<section id="contacto" class="seccion-contacto">
+  <div class="contenedor-pantalla-completa">
+
+    <!-- Columna Izquierda: Formulario -->
+    <div class="columna-formulario">
+      <h2 class="titulo-contacto">¿Tenés un proyecto en mente?</h2>
+      <p class="subtitulo-contacto">¡Hablemos!</p>
+
+      <form action="https://formsubmit.co/contactolucialeibovich@gmail.com" method="POST" class="formulario-contacto">
+
+        <input type="hidden" name="_subject" value="¡Nuevo mensaje desde tu Portfolio!">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+
+        <div class="grupo-campo">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="Nombre" placeholder="Tu nombre..." required class="input-contacto">
+        </div>
+
+        <div class="grupo-campo">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="Email" placeholder="Tu email..." required class="input-contacto">
+        </div>
+
+        <div class="grupo-campo">
+          <label for="mensaje">Tu Idea:</label>
+          <textarea id="mensaje" name="Mensaje" rows="3" placeholder="Idea..." required class="input-contacto"></textarea>
+        </div>
+
+        <button type="submit" class="boton-enviar">Enviar</button>
+
+      </form>
+    </div>
+
+    <!-- Columna Derecha: Foto de la sección -->
+    <div class="columna-foto">
+      <img src="trabajemos.png" alt="Lucía Leibovich - Trabaja conmigo" class="foto-contacto">
+    </div>
+
+  </div>
+</section>
+
+       <!-- FOOTER FIJO DE CONTACTO -->
+<footer class="footer-fijo">
+    <div class="footer-contenido">
+        <span class="footer-label">Contacto</span>
+        <div class="footer-links">
+            <a href="mailto:contactolucialeibovich@gmail.com" target="_blank" class="footer-item">
+                <i class="fa-regular fa-envelope"></i> contactolucialeibovich@gmail.com
+            </a>
+            <a href="https://www.linkedin.com/in/luc%C3%ADa-leibovich-523741376/" target="_blank" class="footer-item">
+                <i class="fa-brands fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://wa.me/5491124662466" target="_blank" class="footer-item">
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+        </div>
+    </div>
+</footer>
+    </section>
+
+<!-- Visor para ampliar imágenes de los casos -->
+<div class="caso-visor" id="caso-visor"><button type="button">Cerrar ✕</button><img id="caso-visor-img" alt=""><p class="caso-visor-pie" id="caso-visor-pie">Hacé clic en cualquier lugar para volver</p></div>
+
+<script>
+    // ---- Carpetas de proyectos ----
+    let carpetaActual = null;
+
+    function abrirCarpeta(id) {
+        const plantilla = document.getElementById('carpeta-' + id);
+        if (!plantilla) return;
+        carpetaActual = id;
+
+        document.getElementById('vista-grilla-proyectos').style.display = 'none';
+        const vistaDetalle = document.getElementById('vista-detalle-proyecto');
+        vistaDetalle.style.display = 'block';
+
+        document.getElementById('caso-tag').innerText = plantilla.dataset.tag || '';
+        const contenido = document.getElementById('detalle-contenido');
+        contenido.innerHTML = '';
+        contenido.appendChild(plantilla.content.cloneNode(true));
+        actualizarBotonVolver();
+
+        document.getElementById('proyectos').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function abrirCaso(casoId) {
+        const contenido = document.getElementById('detalle-contenido');
+        const inicio = contenido.querySelector('.carpeta-inicio');
+        if (inicio) inicio.hidden = true;
+        contenido.querySelectorAll('[data-caso-id]').forEach(a => { a.hidden = a.dataset.casoId !== casoId; });
+        actualizarBotonVolver();
+        document.getElementById('proyectos').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function volverAtras() {
+        const contenido = document.getElementById('detalle-contenido');
+        const inicio = contenido.querySelector('.carpeta-inicio');
+        // Si estoy dentro de un proyecto de una carpeta con varios, vuelvo al índice de esa carpeta
+        if (inicio && inicio.hidden) {
+            inicio.hidden = false;
+            contenido.querySelectorAll('[data-caso-id]').forEach(a => { a.hidden = true; });
+            actualizarBotonVolver();
+            document.getElementById('proyectos').scrollIntoView({ behavior: 'smooth' });
+        } else {
+            ocultarDetalleProyecto();
+        }
+    }
+
+    function actualizarBotonVolver() {
+        const inicio = document.querySelector('#detalle-contenido .carpeta-inicio');
+        const boton = document.getElementById('caso-volver');
+        if (inicio && inicio.hidden) {
+            const titulo = inicio.querySelector('.carpeta-titulo');
+            boton.innerText = '← Volver a ' + (titulo ? titulo.innerText : 'la carpeta');
+        } else {
+            boton.innerText = '← Volver a las carpetas';
+        }
+    }
+
+    document.addEventListener('click', function (e) {
+        const card = e.target.closest('.caso-card');
+        if (card) { abrirCaso(card.dataset.caso); return; }
+
+        const zoom = e.target.closest('#detalle-contenido [data-zoom]');
+        if (zoom) {
+            abrirVisor(zoom.currentSrc || zoom.src, '');
+            return;
+        }
+
+        // Diplomas de Reconocimientos y Premios: se amplían al hacer clic
+        const diploma = e.target.closest('.certificado-item');
+        if (diploma) {
+            const img = diploma.querySelector('img');
+            const titulo = diploma.querySelector('.certificado-info h3');
+            const premio = diploma.querySelector('.certificado-info p');
+            const texto = (titulo ? titulo.innerText : '') + (premio ? ' · ' + premio.innerText : '');
+            abrirVisor(img.currentSrc || img.src, texto);
+        }
+    });
+    function abrirVisor(src, texto) {
+        document.getElementById('caso-visor-img').src = src;
+        document.getElementById('caso-visor-pie').innerText = (texto ? texto + ' — ' : '') + 'Hacé clic en cualquier lugar para volver';
+        document.getElementById('caso-visor').classList.add('abierto');
+    }
+    document.getElementById('caso-visor').addEventListener('click', function () {
+        this.classList.remove('abierto');
+    });
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') document.getElementById('caso-visor').classList.remove('abierto');
+    });
+
+    function ocultarDetalleProyecto() {
+        // Ocultar vista de detalle y restaurar la grilla
+        document.getElementById('vista-detalle-proyecto').style.display = 'none';
+        document.getElementById('vista-grilla-proyectos').style.display = 'block';
+
+        // Volver arriba de la sección proyectos
+        document.getElementById('proyectos').scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const headerHeight = 50; // Altura fija del header principal
+
+        document.querySelectorAll('.header-principal a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const targetId = this.getAttribute('href');
+
+                // Si el enlace es solo "#", hace scroll hasta arriba de todo
+                if (targetId === '#') {
+                    e.preventDefault();
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                    return;
+                }
+
+                const targetSection = document.querySelector(targetId);
+                if (targetSection) {
+                    e.preventDefault();
+
+                    // Si el detalle de un proyecto está abierto, volver a la vista general primero
+                    const vistaDetalle = document.getElementById('vista-detalle-proyecto');
+                    if (vistaDetalle && vistaDetalle.style.display !== 'none') {
+                        ocultarDetalleProyecto();
+                    }
+
+                    const targetPosition = targetSection.getBoundingClientRect().top + window.pageYOffset;
+
+                    window.scrollTo({
+                        top: targetPosition - headerHeight,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    });
+</script>
+</body>
+</html>
